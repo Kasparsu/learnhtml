@@ -122,6 +122,56 @@ some
         <input type="url">
         <input type="week">
         <textarea rows="12" cols="50" placeholder="hello">aaaaaaa</textarea>
+        <select multiple name="select">
+            <option value="1">Valik 1</option>
+            <option value="2" selected>Valik 2</option>
+            <option value="3" selected>Valik 3</option>
+        </select>
+        <select required>
+            <option disabled selected value="">Vali midagi!</option>
+            <optgroup label="Label 1">
+                <option value="1">Valik 1</option>
+                <option value="2" >Valik 2</option>
+                <option value="3" >Valik 3</option>
+            </optgroup>
+            <optgroup label="Label 2">
+                <option value="5">Valik 5</option>
+                <option value="6" >Valik 6</option>
+                <option value="4" >Valik 4</option>
+            </optgroup>
+        </select>
+        <br>
+        <input type="text" list="shopping">
+        <datalist id="shopping">
+            <option>Piim</option>
+            <option>Sai</option>
+            <option>Leib</option>
+            <option>Viin</option>
+        </datalist>
+        <fieldset>
+            <legend>Simple fieldset</legend>
+            <input type="radio" id="radio">
+            <label for="radio">Spirit of radio</label>
+          </fieldset>
+
+        <progress value="70" max="100">70 %</progress>
+        <meter low="30" high="80" max="100" value="84">B</meter>
+        <meter low="30" high="80" max="100" value="100">B</meter>
+        <meter low="30" high="80" max="100" value="50">B</meter>
+        <meter low="30" high="80" max="100" value="40">B</meter>
+        <meter low="30" high="80" max="100" value="20">B</meter>
+        <details open>
+            <summary>System Requirements</summary>
+            <p>Requires a computer running an operating system. The computer
+            must have some memory and ideally some kind of long-term storage.
+            An input device as well as some form of output device is
+            recommended.</p>
+        </details>
     </form>
+
+    <a href="about.html">About</a>
+    <a href="https://google.com">google</a>
+    <iframe src="about.html"></iframe>
+    <iframe src="https://google.com"></iframe>
 </body>
 </html>
