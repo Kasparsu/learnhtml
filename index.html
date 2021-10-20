@@ -5,173 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        html {
+            background-color:coral;
+        }
+        body {
+            margin: 0;
+        }
+        nav ul li {
+            margin: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+        }
+        nav {
+            background-color: gray;
+        }
+        nav ul li a {
+            color: whitesmoke;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav ul li a:hover {
+            color: lightgray;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
-    some 
-    text 
-    here
-    <p>paragraph</p>
-    <b>bold text</b>
-    <i>italic text</i>
-    <p>
-        <h1>
-            <b>Can be <i>nested</i></b>
-        </h1>
-    </p>
-    some <br/>
-    text <br>
-    here <br>  
-    <!-- im a 
-        comment -->
-    x<sup>2</sup>
-    x<sub>2</sub>
-    <hr>    <!-- separator line -->
-    <address>Loodjärve tee 25/1, Harjumaa, Eesti</address>
-    <pre>
-some
-        text
-                here
-    </pre>
-    <ul>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-    </ul>
-    <ol>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-    </ol>
-    <abbr title="HyperText Markup Language">HTML</abbr>
-    <cite>some citation</cite>
-    <code>System.out.println("hello world");</code>
-    <em>Emphasis <em>even more</em></em>
-    <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>
-    <small>copyright small text</small>
-    <strong>Another bold</strong>
-    <time datetime="2021-10-18">10/18/2021</time>
-    <u>underlined text</u>
-    <p>A simple equation:
-        <var>x</var> = <var>y</var> + 2 </p>
-    <p>kasparmartin suursalu</p>
-    <p>kaspar<wbr>martin suursalu</p>
-    <img src="cat.png"></img>
-    <img src="https://ychef.files.bbci.co.uk/976x549/p07ryyyj.jpg"></img>
-    <audio controls src="sample-3s.mp3"></audio>
-    <video controls src="yt5s.com-Big Buck Bunny 60fps 4K - Official Blender Foundation Short Film-(144p).mp4"></video>
-    <table border>
-        <thead>
-            <th>nr</th>
-            <th>nimi</th>
-            <th>vanus</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Kaspar</td>
-                <td>28</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Martin</td>
-                <td>42</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Paul</td>
-                <td>12</td>
-            </tr>
-            <tr>
-                <td colspan="3">Vanus kokku: 234</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <th>nr</th>
-            <th>nimi</th>
-            <th>vanus</th>
-        </tfoot>
-    </table>
-    <form>
-        <input type="text" placeholder="enter some text" value="Some value">
-        <input type="email" required>
-        <input type="password">
-        <input type="number" step="100" max="400" min="0">
-        <input type="date">
-        <input type="datetime-local">
-        <input type="button" value="click me">
-        <input type="checkbox" name="isChecked" value="some value">
-        <input type="radio" name="radio" value="option 1">
-        <input type="radio" name="radio" value="option 2">
-        <input type="radio" name="radio" value="option 3">
-        <input type="range" step="10" max="100" min="0" value="80">
-        <input type="color">
-        <input type="file" accept="image/*">
-        <input type="hidden" value="some secret value">
-        <input type="month">
-        <input type="reset">
-        <input type="search">
-        <input type="submit">
-        <input type="tel">
-        <input type="time">
-        <input type="url">
-        <input type="week">
-        <textarea rows="12" cols="50" placeholder="hello">aaaaaaa</textarea>
-        <select multiple name="select">
-            <option value="1">Valik 1</option>
-            <option value="2" selected>Valik 2</option>
-            <option value="3" selected>Valik 3</option>
-        </select>
-        <select required>
-            <option disabled selected value="">Vali midagi!</option>
-            <optgroup label="Label 1">
-                <option value="1">Valik 1</option>
-                <option value="2" >Valik 2</option>
-                <option value="3" >Valik 3</option>
-            </optgroup>
-            <optgroup label="Label 2">
-                <option value="5">Valik 5</option>
-                <option value="6" >Valik 6</option>
-                <option value="4" >Valik 4</option>
-            </optgroup>
-        </select>
-        <br>
-        <input type="text" list="shopping">
-        <datalist id="shopping">
-            <option>Piim</option>
-            <option>Sai</option>
-            <option>Leib</option>
-            <option>Viin</option>
-        </datalist>
-        <fieldset>
-            <legend>Simple fieldset</legend>
-            <input type="radio" id="radio">
-            <label for="radio">Spirit of radio</label>
-          </fieldset>
-
-        <progress value="70" max="100">70 %</progress>
-        <meter low="30" high="80" max="100" value="84">B</meter>
-        <meter low="30" high="80" max="100" value="100">B</meter>
-        <meter low="30" high="80" max="100" value="50">B</meter>
-        <meter low="30" high="80" max="100" value="40">B</meter>
-        <meter low="30" high="80" max="100" value="20">B</meter>
-        <details open>
-            <summary>System Requirements</summary>
-            <p>Requires a computer running an operating system. The computer
-            must have some memory and ideally some kind of long-term storage.
-            An input device as well as some form of output device is
-            recommended.</p>
-        </details>
-    </form>
-
-    <a href="about.html">About</a>
-    <a href="https://google.com">google</a>
-    <iframe src="about.html"></iframe>
-    <iframe src="https://google.com"></iframe>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fuga molestias libero! Consectetur quo eum animi accusamus corrupti possimus? Quisquam saepe reprehenderit suscipit repellendus eum dolore eius aut aperiam vel.
+        <ul>
+            <li>c#</li>
+            <li>java</li>
+            <li>html</li>
+        </ul>
+    </main>
+    <footer>
+        ©Kaspar Martin Suursalu 2021
+    </footer>
 </body>
 </html>
