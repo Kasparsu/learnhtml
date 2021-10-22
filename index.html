@@ -5,34 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        html {
-            background-color:coral;
-        }
-        body {
-            margin: 0;
-        }
-        nav ul li {
-            margin: 10px;
-        }
-        nav ul {
-            list-style-type: none;
-            display: flex;
-            margin: 0;
-        }
-        nav {
-            background-color: gray;
-        }
-        nav ul li a {
-            color: whitesmoke;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        nav ul li a:hover {
-            color: lightgray;
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <nav>
@@ -44,10 +17,10 @@
     </nav>
     <main>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fuga molestias libero! Consectetur quo eum animi accusamus corrupti possimus? Quisquam saepe reprehenderit suscipit repellendus eum dolore eius aut aperiam vel.
-        <ul>
-            <li>c#</li>
-            <li>java</li>
-            <li>html</li>
+        <ul id="langs" class="list text-red">
+            <li class="bg-green text-red">c#</li>
+            <li class="bg-green">java</li>
+            <li class="text-red">html</li>
         </ul>
     </main>
     <footer>
