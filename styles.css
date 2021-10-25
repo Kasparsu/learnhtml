@@ -1,4 +1,4 @@
-html {
+/* html {
     background-color:coral;
 }
 body {
@@ -16,7 +16,7 @@ nav ul {
 }
 nav {
     background-color: gray;
-    /* background: gray; */
+    background: gray;
 }
 nav ul li a {
     color: whitesmoke;
@@ -35,10 +35,33 @@ nav ul li a:hover {
 }
 .text-red {
     color: red;
-}
+} 
 #langs.list {
 
 }
 main .list.text-red {
 
+}
+*/
+
+.btn-primary {
+    color: black;
+    background-color: lightblue;
+    border-color: lightblue;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    color: black;
+    background-color: rgb(130, 163, 173);
+    border-color: rgb(130, 163, 173);
+}
+
+.btn-coral {
+    color: black;
+    background-color: lightcoral;
+    border-color: lightcoral;
+}
+.btn-coral:hover, .btn-coral:active, .btn-coral:focus {
+    color: black;
+    background-color: coral;
+    border-color: coral;
 }
