@@ -1,5 +1,8 @@
+const PurgecssPlugin = require('purgecss-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const glob = require('glob');
 
 module.exports = {
     entry: './src/index.js',
@@ -15,10 +18,37 @@ module.exports = {
         port: 9000,
         open: true
     },
+    module: {
+        rules: [
+            { 
+                test: /\.txt$/,
+                use: 'raw-loader' 
+            },
+            {
+                test: /\.s[ac]ss$/,
+                use: [MiniCssExtractPlugin.loader,'css-loader','sass-loader']
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader','css-loader']
+            },
+            {
+                test: /\.coffee$/,
+                use: ['coffee-loader']
+            },
+            {
+                test: /\.ts$/,
+                use: ['ts-loader']
+            }
+        ],
+    },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'cool title',
             template: './src/index.html'
+        }),
+        new MiniCssExtractPlugin(),
+        new PurgecssPlugin({
+            paths: glob.sync(`./src/**/*`,  { nodir: true }),
         })
     ],
 };
