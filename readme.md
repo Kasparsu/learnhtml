@@ -12,3 +12,7 @@
 # build production
 
 `npm run build`
+
+# run websocket "chat"
+
+`node server.js`

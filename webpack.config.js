@@ -52,9 +52,9 @@ module.exports = {
             template: './src/index.html'
         }),
         new MiniCssExtractPlugin(),
-        new PurgecssPlugin({
-            paths: glob.sync(`./src/**/*`,  { nodir: true }),
-        }),
+        // new PurgecssPlugin({
+        //     paths: glob.sync(`./src/**/*`,  { nodir: true }),
+        // }),
         new VueLoaderPlugin()
     ],
 };
