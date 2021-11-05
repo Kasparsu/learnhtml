@@ -1,3 +1,4 @@
+const { VueLoaderPlugin } = require('vue-loader');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -39,6 +40,10 @@ module.exports = {
             {
                 test: /\.ts$/,
                 use: ['ts-loader']
+            },
+            {
+                test: /\.vue$/,
+                use: ['vue-loader']
             }
         ],
     },
@@ -49,6 +54,7 @@ module.exports = {
         new MiniCssExtractPlugin(),
         new PurgecssPlugin({
             paths: glob.sync(`./src/**/*`,  { nodir: true }),
-        })
+        }),
+        new VueLoaderPlugin()
     ],
 };
